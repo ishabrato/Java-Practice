@@ -6,10 +6,12 @@ class BankAccount {
 
     void deposit(double amount) {
         balance = balance + amount;
+        System.out.println(amount + " is credited to your account");
     }
 
     void withdraw(double amount) {
         balance = balance - amount;
+        System.out.println(amount + " is debited to your account");
     }
     void display(){
         System.out.println("Balance is: "+ balance);
@@ -22,6 +24,7 @@ class Savingsacc extends BankAccount {
             System.out.println("cant withdraw");
         } else {
             balance = balance - amount;
+            System.out.println(amount + " is debited to your account");
         }
     }
 }
@@ -32,6 +35,7 @@ class Cheakingacc extends BankAccount {
             balance = balance - amount;
         } else if(balance==0 && amount<=100) {
             balance = balance - amount;
+            System.out.println(amount + " is debited to your account");
         } else {
             System.out.println("cant withdraw");
         }
