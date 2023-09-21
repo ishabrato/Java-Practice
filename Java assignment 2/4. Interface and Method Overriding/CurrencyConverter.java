@@ -11,7 +11,7 @@ class EuroConverter implements Converter {
     public void convertCurrency() {
         System.out.print("\nEnter the amount to be converted: ");
         amt = sc.nextDouble();
-        System.out.println("INR to Euro currency convertor: " + (amt * 88.501));
+        System.out.println("INR to Euro currency convertor: " + (amt * 88.50));
     }
 }
 
