@@ -8,6 +8,9 @@ class VarArgs {
     }
     public static void main(String[] args) {
         System.out.println("Sum using VarArgs");
+        System.out.println(sum(1));
+        System.out.println(sum(1,2));
+        System.out.println(sum(1,2,3));
         System.out.println(sum(1,2,3,4));
     }
 }
