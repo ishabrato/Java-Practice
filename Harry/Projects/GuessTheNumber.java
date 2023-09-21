@@ -36,9 +36,10 @@ class GuessTheNumber {
 
             else {
                 System.out.println(YELLOW+"Your guess is too low.\nYou have " + (k - 1) + " tries left."+RESET);
+                k--;
             }
 
-            k--;
+            
         }
 
         if (correct == false) {
